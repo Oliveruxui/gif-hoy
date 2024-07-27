@@ -1,0 +1,178 @@
+/* comentario */
+
+/* selector {
+    propiedad: valor;
+    propiedad2: valor;
+    propiedad3: valor;
+}
+*/
+
+/* estilos de textos */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900; 
+    font-size: 40px; 
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+
+/* estilos de header */
+
+header {
+    display: flex;
+    background-color: blue ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 12px;
+}
+
+header a img {
+    height: 40px;
+}
+
+header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+
+  
+}
+
+header nav ul li a {
+    color: whitesmoke;
+    text-decoration-line: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+
+}
+
+
+main ol li {
+    color: rgb(39, 87, 87);
+}
+
+main ol .verde {
+    color: brown;
+    background-color: yellow;
+}
+
+.inicio {
+    height: 70vh;
+    background-image: url('../img/banner-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 30px;
+}
+
+
+
+footer {
+    background-color: blue;
+    text-align: center;
+}
+
+/* Estilos contacto */
+.contacto{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2rem;
+    padding: 24px;
+}
+
+.contacto-img, form, .contacto-img img{ 
+    width: 100%;
+}
+
+/* Estilos Portafolio.Html */
+
+ 
+.content {
+    margin: 0px 30px;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 25%);
+    align-content: center;
+    row-gap: 10px;
+
+}
+
+section div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover ;
+}
+
+.imagen-dos , .imagen-cinco {
+    display: none;
+}
+
+
+/* estilos de tablet mq tablet */
+@media screen and (min-width: 768px) {
+   .content{
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: repeat(2, 40%) ;
+    column-gap: 10px;
+   }
+
+   section .imagen-cuatro {
+    grid-column: span 2;
+   }
+   
+   .contacto {
+    flex-wrap: nowrap;
+   }  
+}
+
+
+
+/* estilos de tablet mq desktop */
+@media screen and (min-width: 1024px) {
+  
+    .imagen-dos , .imagen-cinco {
+        display: block;
+    }
+
+    .content{
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-rows: 30% 30% 15%;
+    }
+
+    .imagen-uno, .imagen-tres{
+        grid-row: span 2;
+    }
+
+    section .imagen-dos, section .imagen-cuatro{
+        grid-column: span 1;
+    }
+
+    section .imagen-cinco{
+        grid-column: span 3;
+    }
+
+}
+
+

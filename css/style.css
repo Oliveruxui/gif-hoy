@@ -36,7 +36,7 @@ p {
 
 header {
     display: flex;
-    background-color: blue ;
+    background-color: rgb(0, 8, 14) ;
     align-items: center;
     justify-content: space-between;
     padding: 0px 12px;
@@ -85,6 +85,19 @@ main ol .verde {
     padding: 30px;
 }
 
+
+.header-inicio {
+    height: 70vh;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 30px;
+    color: aliceblue;
+}
 
 
 footer {
